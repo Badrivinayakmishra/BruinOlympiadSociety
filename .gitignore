@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+.firebase/
+.firebaserc
+firebase.json
+images/VR_video_new_backup.mp4

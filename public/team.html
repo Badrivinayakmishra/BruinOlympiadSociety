@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Our Team - Bruin Olympiad Society</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Raleway:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link rel="icon" href="images/bos_logo.png">
+    
+    <style>
+        :root {
+            --ucla-blue: #2774AE;
+            --ucla-gold: #FFD100;
+            --premium-white: #ffffff;
+            --soft-gray: #f8f9fa;
+            --text-dark: #1a1a1a;
+            --text-muted: #555555;
+        }
+
+        body {
+            background-color: var(--premium-white);
+            color: var(--text-dark);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            cursor: none;
+        }
+
+        .cursor-dot {
+            width: 8px;
+            height: 8px;
+            background: #000;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 99999;
+            transform: translate(-50%, -50%);
+            transition: transform 0.1s ease-out;
+        }
+
+        .cursor-dot.hover {
+            transform: translate(-50%, -50%) scale(2.5);
+            background: rgba(0, 0, 0, 0.1);
+            border: 1px solid #000;
+        }
+
+        .navbar-custom {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar-custom .navbar-brand img {
+            height: 50px;
+        }
+
+        .navbar-custom .nav-link {
+            color: var(--text-dark) !important;
+            font-weight: 600;
+            margin: 0 1rem;
+            font-size: 0.9rem;
+        }
+
+        .navbar-custom .nav-link:hover {
+            color: var(--ucla-blue) !important;
+        }
+
+        .dropdown-item {
+            text-decoration: none !important;
+        }
+
+        .dropdown-item:hover {
+            text-decoration: none !important;
+        }
+
+        .header-bg {
+            background: linear-gradient(135deg, #2af598 0%, #009efd 100%);
+            padding: 0;
+            padding-top: 120px;
+            padding-bottom: 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .wave-container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wave-container svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+
+        .wave-container .shape-fill {
+            fill: #FFFFFF;
+        }
+
+        .header-bg .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .page-title {
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-size: 3.5rem;
+            color: #ffffff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-bg .lead {
+            color: #ffffff;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-section {
+            padding: 80px 0;
+        }
+
+        .team-member {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+            vertical-align: top;
+            width: 250px;
+        }
+
+        .image-wrapper {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 20px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 5px solid #f8f9fa;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .img-team {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .img-team:hover {
+            transform: scale(1.05);
+        }
+
+        .job-title {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 1.1rem; color: #1a1a1a; line-height: 1.2; text-decoration: none;">
+                Bruin Olympiad<br>Society
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBOS">
+                <span class="fas fa-bars" style="color: #000;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navBOS">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="team.html">TEAM</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            EVENTS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            <a class="dropdown-item" href="events.html#upcoming">Upcoming Events</a>
+                            <a class="dropdown-item" href="events.html#past">Past Events</a>
+                            <a class="dropdown-item" href="events.html#winners">Past Winners</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="tutoring.html">TUTORING</a></li>
+                    <li class="nav-item"><a class="nav-link" href="join.html">JOIN</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header-bg">
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1 class="page-title">Our Team</h1>
+        </div>
+
+        <div class="wave-container">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
+
+    <div id="team" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4 style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">We are a team of UCLA students passionate about creating merit-based opportunities in STEM through Olympiads, tutoring, and mentorship.</h4>
+                </div>
+            </div>
+
+            <!-- Co-Founders Section -->
+            <div class="row">
+                <div class="col-lg-12" style="text-align: center;">
+                    <h3 style="text-align: center; margin-bottom: 30px; font-family: 'Raleway'; font-weight: 700; color: var(--ucla-blue);">Co-Founders</h3>
+
+                    <!-- Bill Wang -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-team" src="images/bill_new.jpg" alt="Bill Wang" style="object-position: top;">
+                        </div>
+                        <p class="p-large" style="font-weight: 700;"><strong>Bill Wang</strong></p>
+                        <p class="job-title">3rd Year Biochemistry</p>
+                        <p class="small text-muted">Hershey's dark chocolate bar is my favorite sweet</p>
+                    </div>
+
+                    <!-- Dhruv Suresh -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-team" src="images/dhruv.png" alt="Dhruv Suresh">
+                        </div>
+                        <p class="p-large" style="font-weight: 700;"><strong>Dhruv Suresh</strong></p>
+                        <p class="job-title">3rd Year MCDB</p>
+                        <p class="small text-muted">I've lived in Singapore when I was younger</p>
+                    </div>
+
+                    <!-- Badri Vinayak Mishra -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-team" src="images/badri.png" alt="Badri Vinayak Mishra" style="object-position: top;">
+                        </div>
+                        <p class="p-large" style="font-weight: 700;"><strong>Badri Vinayak Mishra</strong></p>
+                        <p class="job-title">3rd Year MCDB</p>
+                        <p class="small text-muted">I have once slept on a sand dune in Death Valley while backpacking</p>
+                    </div>
+
+                    <!-- Jay Bhatnagar -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-team" src="images/jay.png" alt="Jay Bhatnagar">
+                        </div>
+                        <p class="p-large" style="font-weight: 700;"><strong>Jay Bhatnagar</strong></p>
+                        <p class="job-title">3rd Year Neuroscience</p>
+                        <p class="small text-muted">I was born in Washington D.C.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <hr style="margin-top: 50px; margin-bottom: 50px;">
+
+            <!-- Faculty & Advisors Section -->
+            <div class="row">
+                <div class="col-lg-12" style="text-align: center;">
+                    <h3 style="text-align: center; margin-bottom: 30px; font-family: 'Raleway'; font-weight: 700; color: var(--ucla-blue);">
+                        Faculty & Advisors</h3>
+
+                    <!-- Dr. Pham -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-team" src="images/dr_pham.png" alt="Dr. Pham">
+                        </div>
+                        <p class="p-large" style="font-weight: 700;"><strong>Dr. Pham</strong></p>
+                        <p class="job-title">Beloved Organic Chemistry Professor</p>
+                        <p class="small text-muted">Teaching at UCLA since 2016. Loves puzzles, riddles, and trivia. Jeopardy! participant. Has generously supported our organization for two quarters by helping create test banks and promoting events.</p>
+                    </div>
+
+                    <!-- Dr. Ko -->
+                    <div class="team-member">
+                        <div class="image-wrapper">
+                            <img class="img-team" src="images/dr_ko.png" alt="Dr. Ko">
+                        </div>
+                        <p class="p-large" style="font-weight: 700;"><strong>Dr. Ko</strong></p>
+                        <p class="job-title">Inspiring Life Sciences Lecturer</p>
+                        <p class="small text-muted">Teaching in the Department of Life Sciences since 2023. Has generously supported our Biology Olympiad by helping create test banks and promoting the event with her students.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-white border-top text-center">
+        <div class="container">
+            <img src="images/bos_logo.png" alt="BOS Logo"
+                style="height: 60px; margin-bottom: 1.5rem;">
+            <div class="mb-4 social-links">
+                <a href="https://instagram.com/uclaolympiad" target="_blank" class="mx-3 text-dark"
+                    style="text-decoration: none; font-weight: 600;">
+                    <i class="fab fa-instagram"></i> @uclaolympiad
+                </a>
+                <a href="https://join.slack.com/t/bruinstemolym-sdv4736/shared_invite/zt-3eahr02a9-HUB2ADJe6w1_AycRYfjBEw" target="_blank" class="mx-3 text-dark"
+                    style="text-decoration: none; font-weight: 600;">
+                    <i class="fab fa-slack"></i> Slack
+                </a>
+                <a href="https://linktr.ee/uclaolympiad" target="_blank" class="mx-3 text-dark"
+                    style="text-decoration: none; font-weight: 600;">
+                    <i class="fas fa-link"></i> Linktree
+                </a>
+                <a href="mailto:bruin.olympiad@gmail.com" class="mx-3 text-dark"
+                    style="text-decoration: none; font-weight: 600;">
+                    <i class="fas fa-envelope"></i> Mailing List
+                </a>
+            </div>
+            <p class="mb-0">© 2025 Bruin Olympiad Society. Built with UCLA Spirit.</p>
+        </div>
+    </footer>  
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
+    <!-- Slideshow Script -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            if (slides[slideIndex-1]) {
+                slides[slideIndex-1].style.display = "block";
+            }
+            if (dots[slideIndex-1]) {
+                dots[slideIndex-1].className += " active";
+            }
+            setTimeout(showSlides, 3000);
+        }
+    </script>
+
+    <!-- Simple Black Dot Cursor Script -->
+    <script>
+        const cursorDot = document.querySelector('.cursor-dot');
+
+        // Update cursor position
+        document.addEventListener('mousemove', (e) => {
+            cursorDot.style.left = e.clientX + 'px';
+            cursorDot.style.top = e.clientY + 'px';
+        });
+
+        // Add hover effect on interactive elements
+        const interactiveElements = document.querySelectorAll('a, button, .btn-solid-lg, .card, .navbar-brand, .nav-link, input, textarea, .image-wrapper');
+
+        interactiveElements.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursorDot.classList.add('hover');
+            });
+
+            el.addEventListener('mouseleave', () => {
+                cursorDot.classList.remove('hover');
+            });
+        });
+
+        // Hide cursor when leaving the window
+        document.addEventListener('mouseleave', () => {
+            cursorDot.style.opacity = '0';
+        });
+
+        document.addEventListener('mouseenter', () => {
+            cursorDot.style.opacity = '1';
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tutoring Services - Bruin Olympiad Society</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Raleway:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link rel="icon" href="images/bos_logo.png">
+
+    <style>
+        :root {
+            --ucla-blue: #2774AE;
+            --ucla-gold: #FFD100;
+            --premium-white: #ffffff;
+            --soft-gray: #f8f9fa;
+            --text-dark: #1a1a1a;
+            --text-muted: #555555;
+        }
+
+        body {
+            background-color: var(--premium-white);
+            color: var(--text-dark);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            cursor: none;
+        }
+
+        .cursor-dot {
+            width: 8px;
+            height: 8px;
+            background: #000;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 99999;
+            transform: translate(-50%, -50%);
+            transition: transform 0.1s ease-out;
+        }
+
+        .cursor-dot.hover {
+            transform: translate(-50%, -50%) scale(2.5);
+            background: rgba(0, 0, 0, 0.1);
+            border: 1px solid #000;
+        }
+
+        .navbar-custom {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar-custom .navbar-brand img {
+            height: 50px;
+        }
+
+        .navbar-custom .nav-link {
+            color: var(--text-dark) !important;
+            font-weight: 600;
+            margin: 0 1rem;
+            font-size: 0.9rem;
+        }
+
+        .navbar-custom .nav-link:hover {
+            color: var(--ucla-blue) !important;
+        }
+
+        .header-bg {
+            background: linear-gradient(135deg, #2af598 0%, #009efd 100%);
+            padding: 0;
+            padding-top: 120px;
+            padding-bottom: 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .wave-container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wave-container svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+
+        .wave-container .shape-fill {
+            fill: #FFFFFF;
+        }
+
+        .header-bg .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .page-title {
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-size: 3.5rem;
+            color: #ffffff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-bg .lead {
+            color: #ffffff;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: var(--ucla-blue);
+        }
+
+        .card-premium {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 1.5rem;
+            border: 1px solid #eee;
+            height: 100%;
+            transition: all 0.3s;
+        }
+
+        .card-premium:hover {
+            transform: translateY(-10px);
+            border-color: var(--ucla-blue);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .course-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 1.1rem;
+        }
+
+        .course-list li:last-child {
+            border-bottom: none;
+        }
+
+        .course-list li:before {
+            content: "✓";
+            color: var(--ucla-blue);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .btn-modern {
+            padding: 1.2rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .btn-ucla {
+            background: var(--ucla-blue);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(39, 116, 174, 0.3);
+        }
+
+        .btn-ucla:hover {
+            background: #1a5c8e;
+            transform: translateY(-3px);
+            color: #fff;
+            box-shadow: 0 6px 20px rgba(39, 116, 174, 0.4);
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, rgba(39, 116, 174, 0.1) 0%, rgba(42, 245, 152, 0.1) 100%);
+            padding: 2rem;
+            border-radius: 1rem;
+            margin-bottom: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 1.1rem; color: #1a1a1a; line-height: 1.2; text-decoration: none;">
+                Bruin Olympiad<br>Society
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBOS">
+                <span class="fas fa-bars" style="color: #000;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navBOS">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">TEAM</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            EVENTS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            <a class="dropdown-item" href="events.html#upcoming">Upcoming Events</a>
+                            <a class="dropdown-item" href="events.html#past">Past Events</a>
+                            <a class="dropdown-item" href="events.html#winners">Past Winners</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active"><a class="nav-link" href="tutoring.html">TUTORING</a></li>
+                    <li class="nav-item"><a class="nav-link" href="join.html">JOIN</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header-bg">
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1 class="page-title">Tutoring Services</h1>
+            <p class="lead">Peer-led academic support for UCLA STEM courses</p>
+        </div>
+
+        <div class="wave-container">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
+
+    <div class="content-section">
+        <div class="container">
+
+            <div class="info-box text-center">
+                <h3 style="color: var(--ucla-blue); font-weight: 700; margin-bottom: 1rem;">Free Peer Tutoring for UCLA Students</h3>
+                <p style="font-size: 1.2rem; margin-bottom: 0;">Our experienced tutors provide personalized support to help you excel in your STEM courses. All tutoring services are completely free for UCLA students!</p>
+            </div>
+
+            <h2 class="section-title">What We Offer</h2>
+
+            <div class="row mb-5">
+
+                <!-- Life Sciences -->
+                <div class="col-lg-4 mb-4">
+                    <div class="card-premium">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-dna fa-4x" style="color: var(--ucla-blue);"></i>
+                        </div>
+                        <h3 style="color: var(--ucla-blue); text-align: center; margin-bottom: 2rem;">Life Sciences</h3>
+                        <ul class="course-list">
+                            <li>LS 7A</li>
+                            <li>LS 7B</li>
+                            <li>LS 7C</li>
+                            <li>LS 30A</li>
+                            <li>LS 30B</li>
+                            <li>LS 40</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Chemistry -->
+                <div class="col-lg-4 mb-4">
+                    <div class="card-premium">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-flask fa-4x" style="color: var(--ucla-blue);"></i>
+                        </div>
+                        <h3 style="color: var(--ucla-blue); text-align: center; margin-bottom: 2rem;">Chemistry</h3>
+                        <ul class="course-list">
+                            <li>Chem 14A</li>
+                            <li>Chem 14B</li>
+                            <li>Chem 14C</li>
+                            <li>Chem 14D</li>
+                            <li>Chem 20A</li>
+                            <li>Chem 20B</li>
+                            <li>Chem 30A</li>
+                            <li>Chem 30B</li>
+                            <li>Chem 30C</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Physics -->
+                <div class="col-lg-4 mb-4">
+                    <div class="card-premium">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-atom fa-4x" style="color: var(--ucla-blue);"></i>
+                        </div>
+                        <h3 style="color: var(--ucla-blue); text-align: center; margin-bottom: 2rem;">Physics</h3>
+                        <ul class="course-list">
+                            <li>Physics 5A</li>
+                            <li>Physics 5B</li>
+                            <li>Physics 5C</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Upper Division Courses -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card-premium" style="background: linear-gradient(135deg, rgba(42, 245, 152, 0.05) 0%, rgba(0, 158, 253, 0.05) 100%);">
+                        <h3 style="color: var(--ucla-blue); text-align: center; margin-bottom: 2rem;">
+                            <i class="fas fa-graduation-cap" style="margin-right: 10px;"></i>
+                            Upper Division Courses
+                        </h3>
+                        <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">We also provide tutoring for advanced courses in:</p>
+                        <div class="row text-center">
+                            <div class="col-md-3">
+                                <div style="padding: 1.5rem;">
+                                    <i class="fas fa-microscope fa-3x mb-3" style="color: var(--ucla-blue);"></i>
+                                    <h5 style="font-weight: 700;">Biochemistry</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div style="padding: 1.5rem;">
+                                    <i class="fas fa-cell fa-3x mb-3" style="color: var(--ucla-blue);"></i>
+                                    <h5 style="font-weight: 700;">MCDB</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div style="padding: 1.5rem;">
+                                    <i class="fas fa-brain fa-3x mb-3" style="color: var(--ucla-blue);"></i>
+                                    <h5 style="font-weight: 700;">Neuroscience</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div style="padding: 1.5rem;">
+                                    <i class="fas fa-leaf fa-3x mb-3" style="color: var(--ucla-blue);"></i>
+                                    <h5 style="font-weight: 700;">Biology</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="join.html" class="btn-modern btn-ucla">Request Tutoring</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-white border-top text-center">
+        <div class="container">
+            <img src="images/bos_logo.png" alt="BOS Logo"
+                style="height: 60px; margin-bottom: 1.5rem;">
+            <div class="mb-4 social-links">
+                <a href="https://instagram.com/uclaolympiad" target="_blank" class="mx-3 text-dark"
+                    style="text-decoration: none; font-weight: 600;">
+                    <i class="fab fa-instagram"></i> @uclaolympiad
+                </a>
+                <a href="https://linktr.ee/uclaolympiad" target="_blank" class="mx-3 text-dark"
+                    style="text-decoration: none; font-weight: 600;">
+                    <i class="fas fa-link"></i> Linktree
+                </a>
+            </div>
+            <p class="mb-0">© 2025 Bruin Olympiad Society. Built with UCLA Spirit.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Simple Black Dot Cursor Script -->
+    <script>
+        const cursorDot = document.querySelector('.cursor-dot');
+
+        // Update cursor position
+        document.addEventListener('mousemove', (e) => {
+            cursorDot.style.left = e.clientX + 'px';
+            cursorDot.style.top = e.clientY + 'px';
+        });
+
+        // Add hover effect on interactive elements
+        const interactiveElements = document.querySelectorAll('a, button, .btn-solid-lg, .card, .navbar-brand, .nav-link, input, textarea, .card-premium');
+
+        interactiveElements.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursorDot.classList.add('hover');
+            });
+
+            el.addEventListener('mouseleave', () => {
+                cursorDot.classList.remove('hover');
+            });
+        });
+
+        // Hide cursor when leaving the window
+        document.addEventListener('mouseleave', () => {
+            cursorDot.style.opacity = '0';
+        });
+
+        document.addEventListener('mouseenter', () => {
+            cursorDot.style.opacity = '1';
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+5/8/24 (Cailah Lim):
+- created NDAN 2024 page
+- replaces occurances of NDAN to NDAN 2023 in both html files and titles
+- rewrote description for NDAN 2024 page
+- uploaded pictures to use for NDAN 2024 page
+TO DO FOR NEXT TIME ~ finish NDAN 2024 page, figure out why some pics arent loading in live view
+
+9/24/24 (Cailah Lim):
+- deleted NDAN 2024 page lol
+- created new class (.img-team) to normalize all team pics
+- updated 2024-2025 team in team.html
+
+9/29/24 (Cailah Lim):
+- added malieka pic
+- added anu
+- deleted old team pics
+
+10/25/24 (Cailah Lim):
+- began working on dgsom chapter page built off alumni page
+
+11/1/24 (Cailah Lim):
+- dgsom chapter finished
+- dgsom chapter page pushed to site
+
+11/18/24 (Cailah Lim):
+- fixed dgsom chapter description and home page missing tab
+- updated alumni page with anna, arlene, ashley, jacob, pauline, robin, saumya
+
+11/19/24 (Cailah Lim):
+- created new NDAN 2023 dropdown and reference
+- created new NDAN 2024 dropdown and reference
+- created new NDAN 2024 page
+- tried to fix footer; DGSOM footer still wonky
+- deployed all edits (mainly NDAN 2024 page) to firebase
+
+12/4/24 (Cailah Lim):
+- fixed Tiffany pic on bio on main team page
+- updated ashley kim former postion on alumni page
+
+1/16/24 (Cailah Lim):
+- updated join page
+- updated dgsom pics according to Tiffany
+- deleted events page and made all references just a drop-down not a button (href="#events.html")
+- created dgsom med panel page under events section
+- deleted hours page
+- created text for hand dgsom page announcement
+- TODO: make hand dgsom announcement fancier, normalize dgsom team pics according to tiffany

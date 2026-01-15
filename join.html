@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Join Us - Bruin Olympiad Society</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Raleway:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link rel="icon" href="images/bos_logo.png">
+
+    <style>
+        :root {
+            --ucla-blue: #2774AE;
+            --premium-white: #ffffff;
+            --soft-gray: #f8f9fa;
+            --text-dark: #1a1a1a;
+            --text-muted: #555555;
+        }
+
+        body {
+            background-color: var(--premium-white);
+            color: var(--text-dark);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            cursor: none;
+        }
+
+        .cursor-dot {
+            width: 8px;
+            height: 8px;
+            background: #000;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 99999;
+            transform: translate(-50%, -50%);
+            transition: transform 0.1s ease-out;
+        }
+
+        .cursor-dot.hover {
+            transform: translate(-50%, -50%) scale(2.5);
+            background: rgba(0, 0, 0, 0.1);
+            border: 1px solid #000;
+        }
+
+        .navbar-custom {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar-custom .navbar-brand img {
+            height: 50px;
+        }
+
+        .navbar-custom .nav-link {
+            color: var(--text-dark) !important;
+            font-weight: 600;
+            margin: 0 1rem;
+        }
+
+        .header-bg {
+            background: linear-gradient(135deg, #2af598 0%, #009efd 100%);
+            padding: 0;
+            padding-top: 120px;
+            padding-bottom: 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .wave-container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wave-container svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+
+        .wave-container .shape-fill {
+            fill: #FFFFFF;
+        }
+
+        .header-bg .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .page-title {
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-size: 3.5rem;
+            color: #ffffff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-bg .lead {
+            color: #ffffff;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-section {
+            padding: 80px 0;
+        }
+
+        .premium-card {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+            border-top: 4px solid var(--ucla-blue);
+        }
+
+        .form-control {
+            border: 1px solid #eee;
+            background: #fcfcfc;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .form-control:focus {
+            border-color: var(--ucla-blue);
+            background: #fff;
+            box-shadow: none;
+        }
+
+        .btn-ucla {
+            background: var(--ucla-blue);
+            color: #fff;
+            font-weight: 700;
+            padding: 1rem 3rem;
+            border-radius: 50px;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+        }
+
+        .btn-ucla:hover {
+            background: #1a5c8e;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(39, 116, 174, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 1.1rem; color: #1a1a1a; line-height: 1.2; text-decoration: none;">
+                Bruin Olympiad<br>Society
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">TEAM</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            EVENTS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            <a class="dropdown-item" href="events.html#upcoming">Upcoming Events</a>
+                            <a class="dropdown-item" href="events.html#past">Past Events</a>
+                            <a class="dropdown-item" href="events.html#winners">Past Winners</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="tutoring.html">TUTORING</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="join.html">JOIN</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header-bg">
+        <div class="container" style="position: relative; z-index: 2;">
+            <h1 class="page-title">Stay Connected</h1>
+        </div>
+
+        <div class="wave-container">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
+
+    <div class="container content-section">
+        <div class="row">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+                <h3 style="font-family: 'Raleway'; font-weight: 700; margin-bottom: 2rem; color: var(--ucla-blue);">What You'll Get</h3>
+                <p class="mb-4" style="font-size: 1.05rem; color: var(--text-dark);">By subscribing, you'll receive exclusive updates about:</p>
+
+                <div style="background: white; padding: 1.25rem; border-radius: 0.75rem; margin-bottom: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid var(--ucla-blue);">
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-trophy fa-lg mt-1 mr-3" style="color: var(--ucla-blue); min-width: 24px;"></i>
+                        <div>
+                            <h5 class="mb-1 font-weight-bold" style="color: var(--text-dark);">Olympiad Competitions</h5>
+                            <p class="mb-0 text-muted" style="font-size: 0.95rem;">Announcements for Biology, Chemistry, and Physics Olympiads with prizes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: white; padding: 1.25rem; border-radius: 0.75rem; margin-bottom: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid var(--ucla-gold);">
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-graduation-cap fa-lg mt-1 mr-3" style="color: var(--ucla-gold); min-width: 24px;"></i>
+                        <div>
+                            <h5 class="mb-1 font-weight-bold" style="color: var(--text-dark);">FREE MCAT Tutoring</h5>
+                            <p class="mb-0 text-muted" style="font-size: 0.95rem;">100% free access to our 95%+ scorers' tutoring sessions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: white; padding: 1.25rem; border-radius: 0.75rem; margin-bottom: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #333;">
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-book-reader fa-lg mt-1 mr-3" style="color: #333; min-width: 24px;"></i>
+                        <div>
+                            <h5 class="mb-1 font-weight-bold" style="color: var(--text-dark);">Study Sessions</h5>
+                            <p class="mb-0 text-muted" style="font-size: 0.95rem;">Weekly tutoring for Life Sciences, Chemistry, Physics, and more</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: white; padding: 1.25rem; border-radius: 0.75rem; margin-bottom: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #28a745;">
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-dollar-sign fa-lg mt-1 mr-3" style="color: #28a745; min-width: 24px;"></i>
+                        <div>
+                            <h5 class="mb-1 font-weight-bold" style="color: var(--text-dark);">Scholarships & Prizes</h5>
+                            <p class="mb-0 text-muted" style="font-size: 0.95rem;">Info on micro-scholarships and competition prizes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="premium-card bg-white shadow-lg border-0">
+                    <h4 class="mb-4 text-center font-weight-bold" style="color: var(--ucla-blue);">Subscribe to Our Mailing List</h4>
+                    <p class="text-center text-muted mb-4">Join <strong>50+ students</strong> already part of our community</p>
+                    <form id="newsletterForm">
+                        <div class="form-group">
+                            <label class="font-weight-600 mb-2">Email Address *</label>
+                            <input type="email" class="form-control" id="email" placeholder="your.email@ucla.edu" required
+                                style="background:#f8f9fa; border:1px solid #e0e0e0; padding: 1rem;">
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-600 mb-2">First Name *</label>
+                            <input type="text" class="form-control" id="fname" placeholder="John" required
+                                style="background:#f8f9fa; border:1px solid #e0e0e0; padding: 1rem;">
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-600 mb-2">Last Name *</label>
+                            <input type="text" class="form-control" id="lname" placeholder="Doe" required
+                                style="background:#f8f9fa; border:1px solid #e0e0e0; padding: 1rem;">
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-600 mb-2">Year (Optional)</label>
+                            <select class="form-control" style="background:#f8f9fa; border:1px solid #e0e0e0; padding: 1rem;">
+                                <option>Select your year</option>
+                                <option>Freshman</option>
+                                <option>Sophomore</option>
+                                <option>Junior</option>
+                                <option>Senior</option>
+                                <option>Graduate Student</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-ucla btn-block mt-4" style="padding: 1rem; font-size: 1.1rem;">Subscribe Now</button>
+                        <p class="text-center text-muted small mt-3 mb-0">We respect your privacy. Unsubscribe anytime.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-5 bg-white border-top text-center">
+        <div class="container">
+            <img src="images/bos_logo.png" alt="BOS Logo"
+                style="height: 60px; margin-bottom: 1.5rem;">
+            <div class="mb-4 social-links">
+                <a href="https://instagram.com/uclaolympiad" target="_blank" class="mx-3 text-dark"
+                    style="text-decoration: none; font-weight: 600;">
+                    <i class="fab fa-instagram"></i> @uclaolympiad
+                </a>
+                <a href="https://linktr.ee/uclaolympiad" target="_blank" class="mx-3 text-dark"
+                    style="text-decoration: none; font-weight: 600;">
+                    <i class="fas fa-link"></i> Linktree
+                </a>
+            </div>
+            <p class="mb-0">© 2025 Bruin Olympiad Society. Built with UCLA Spirit.</p>
+        </div>
+    </footer>
+
+    <script>
+        const cursor = document.querySelector('.cursor-dot');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+        document.querySelectorAll('a, button, input, select, textarea').forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+            el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+        });
+    </script>
+</body>
+
+</html>

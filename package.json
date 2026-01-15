@@ -1,0 +1,12 @@
+{
+  "name": "hand-ucla-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "mkdir -p public && cp -a web/. public/"
+  },
+  "dependencies": {
+    "firebase": "^8.2.1",
+    "firebase-tools": "^10.8.0"
+  }
+}

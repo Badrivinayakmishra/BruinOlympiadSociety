@@ -1,0 +1,174 @@
+Membership and Recruitment on homepage
+<!-- Request -->
+    <!-- <div id="membership"  class="form-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Membership and Board Recruitment</h2>
+                        <a class="button btn-solid-lg page-scroll" style="width: auto; margin-bottom: 5%; font-size: larger;" href="https://youtu.be/eLdb8qReZks">Watch Our Information Session!</a>
+                        <br>
+                        <a class="btn-solid-lg page-scroll" href="recruiting.html" style="background-color: #FFD700; border-color:#FFD700; font-size: larger;">We're Recruiting!</a> <br> <br>
+                        <p>High-tech and Neurological Disorders (HAND) is an official organization at UCLA, focusing on the intersection of healthcare and innovation. We partner with the UCLA Brain Research Institute and the UCLA Movement Disorders Clinic.</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><strong class="blue">This virtual year,</strong>  we are hosting speakers such as medical professionals and industry leaders, facilitating journal clubs to discuss recent research, and leading educational workshops for middle and high schoolers. Additionally, members can choose to be part of the HAND Innovation Team, which is an ongoing, award-winning project to develop a prototype for and market the Parkinson's device patent by our President.</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><strong class="blue">Next year,</strong>  HAND will be guiding members in shadowing physicians at the UCLA Movement Disorders Program and aiding those interested to seek research positions in neuroscience laboratories.</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><strong class="blue">We welcome all students</strong>  passionate about neuroscience and cutting-edge technology, as well as students in the business and marketing fields, interested in biotech and entrepreneurship.
+                                </div>
+                            </li>
+                        </ul> -->
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            <!--    <div class="col-lg-6" style="display:block; margin-top: 12%;">
+                    <!-- Begin Mailchimp Signup Form -->
+                    <!-- <div id="mc_embed_signup">
+                        <form action="https://gmail.us2.list-manage.com/subscribe/post?u=57f74f1d8db8aa77ee84bb87d&amp;id=e8cc5f229a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                                <h4>Subscribe to our mailing list!</h4>
+                                <div class="mc-field-group">
+                                    <label for="mce-EMAIL">Email Address</label><br>
+                                    <input maxlength="60" class="form-control required email" id="mce-EMAIL" name="EMAIL" size="20" type="email" required="" placeholder="Please enter your email address">
+                                </div>
+                                <br>
+                                <div class="mc-field-group">
+                                    <label for="mce-FNAME">First Name</label><br>
+                                    <input id="mce-FNAME" maxlength="60" class="form-control" name="FNAME" size="20" type="text" placeholder="Please enter your first name">
+                                </div>
+                                <br>
+                                <div class="mc-field-group">
+                                    <label for="mce-LNAME">Last Name</label><br>
+                                    <input id="mce-LNAME" maxlength="60" class="form-control" name="LNAME" size="20" type="text" placeholder="Please enter your last name">
+                                </div>
+                                <br>
+                                <div id="mce-responses" class="clear">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                </div>    <**!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--**>
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_57f74f1d8db8aa77ee84bb87d_e8cc5f229a" tabindex="-1" value=""></div>
+                                <div class="clear"><input style="font-size: larger;"type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button form-control-submit-button"></div>
+                                <br>
+                            </div>
+                        </form>
+                    </div> -->
+                    <!-- End of Mailchimp Form-->
+                    
+                    <!--<form action="https://api.elasticemail.com/contact/add?version=2" data-id="yWkIwUFTcz" method="post" id="ewf_subscriptionForm_yWkIwUFTcz" class="EWF__form Inline">
+                        <div class="headers" style="">
+                        <h4 id="ewf_formheader" class="EWF__header">Subscribe to Our Mailing List
+                        </h4>
+                        </div>
+                        <fieldset style="border:none;" class="webform-custominputs">
+                        <div class="inputs">
+                        <div>
+                        <label for="email" class="requiredInput"><Strong>Email</Strong>
+                        </label>
+                        <input maxlength="60" class="form-control webform__form-control" name="email" size="20" type="email" required="" placeholder="Please enter your email address">
+                        </div>
+                        <div>
+                        <label for="field_firstname" style="padding-top: 2%;"><Strong>First Name</Strong>
+                        </label>
+                        <input maxlength="60" class="form-control webform__form-control" name="field_firstname" size="20" type="text" false="" placeholder="Please enter your first name">
+                        </div>
+                        <div>
+                        <label for="field_lastname" style="padding-top: 2%;"><Strong>Last Name</Strong>
+                        </label>
+                        <input maxlength="60" class="form-control webform__form-control" name="field_lastname" size="20" type="text" false="" placeholder="Please enter your last name">
+                        </div>
+                        </div>
+                        <div class="checkboxes">
+                        </div>
+                        <div class="webform-lists" style="display: none;">
+                        <div style="display:flex;" class="checkboxes js-HAND at UCLA">
+                        <label class="container-box">
+                        <input type="checkbox" name="publiclistid" id="sTsUMRwH" value="42e45702-0356-44c0-8b56-f9e3ff0be633" checked="checked">
+                        </label>
+                        <label class="publiclistlabel" for="sTsUMRwH">HAND at UCLA
+                        </label>
+                        </div>
+                        </div>
+                        <div class="consent">
+                        </div>
+                        </fieldset><br>
+                        <a>Once you click subscribe, you will have to confirm your email. Please check your spam folder for the confirmation email.</a>
+                        <br><br>
+                        <fieldset class="webform-options style-updated" style="border:none;">
+                        <input type="submit" name="submit" value="Subscribe" id="eesubmit" class="EWF__subscribe form-control-submit-button">
+                        <input type="hidden" name="publicaccountid" value="7c403d9f-339b-415d-af17-e01b85242342">
+                        <input type="hidden" name="returnUrl" value="https://handucla.org/">
+                        <input type="hidden" name="activationReturnUrl" value="https://handucla.org/">
+                        <input type="hidden" name="alreadyactiveurl" value="https://handucla.org/">
+                        <input type="hidden" name="activationTemplate" value="">
+                        <input type="hidden" name="source" value="WebForm">
+                        <input type="hidden" name="verifyemail" value="false" id="ewf_verifyEmails">
+                        <input type="hidden" id="ewf_captcha" name="captcha" value="false">
+                        <input type="hidden" name="notifyEmail" value="">
+                        <button type="button" name="dismissForm" id="ewf_dismissForm" style="display:none; position: absolute; top: 0; right: 0; float: right">X
+                        </button>
+                        </fieldset>
+                        <div id="ewf_style" class="Inline"></div>
+                        <br>
+                    </form> -->
+    
+                    <!-- Request Form 
+                    <div class="form-container">
+                        <form style="padding-top: 40%;"id="membership" data-toggle="validator" data-focus="false">
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="rname" name="rname" required>
+                                <label class="label-control" for="rname">Full name</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control-input" id="remail" name="remail" required>
+                                <label class="label-control" for="remail">Email</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="ryear" name="ryear" required>
+                                <label class="label-control" for="ryear">Year</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="rmajor" name="rmajor" required>
+                                <label class="label-control" for="rmajor">Major</label>
+                                <div class="help-block with-errors" ></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="rquestions" name="rquestions">
+                                <label class="label-control" for="rquestions">Comments, Questions?</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            div class="form-group">
+                                <select class="form-control-select" id="rselect" required>
+                                    <option class="select-option" value="" disabled selected>Interested in...</option>
+                                    <option class="select-option" value="Personal Loan">Category 1</option>
+                                    <option class="select-option" value="Car Loan">Category 2</option>
+                                    <option class="select-option" value="House Loan">Category 3</option>
+                                </select>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <button id="signup" class="form-control-submit-button">Submit</button>
+                            </div>
+                            <div class="form-message">
+                                <div id="rmsgSubmit" class="h3 text-center" style="color:green"></div>
+                            </div>
+                            <div class="form-message">
+                                <div id="rmsgError" class="h3 text-center" style="color:red"></div>
+                            </div>
+                        </form>
+                    </div> --><!-- end of form-container -->
+                    <!-- end of request form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-1 -->
+    <!-- end of request -->
