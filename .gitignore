@@ -4,3 +4,4 @@ node_modules/
 .firebaserc
 firebase.json
 images/VR_video_new_backup.mp4
+public/images/VR_video_new_backup.mp4
