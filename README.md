@@ -1,1 +1,1 @@
-# UCLA-HAND-Website
+# UCLA-Bruin-Olympiad- Society
