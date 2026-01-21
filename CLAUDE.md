@@ -1,5 +1,5 @@
 # Bruin Olympiad Society - Development Log
-**Last Updated:** 2026-01-20
+**Last Updated:** 2026-01-20 (Evening Updates)
 
 ## Project Overview
 - **Live Site:** https://bruin-olympiad-society-7988c.web.app/
@@ -9,9 +9,33 @@
 
 ## Recent Changes (2026-01-20)
 
-### Major Updates
-1. **Cursor Removed**
-   - Removed custom black dot cursor from all pages (team.html, events.html, tutoring.html)
+### Evening Updates
+1. **Tutoring Page - Mathematics Section**
+   - Separated mathematics courses into dedicated section
+   - **Mathematics:** LS 30A • LS 30B • LS 40 • Stats 13
+   - **Life Sciences:** Now only LS 7A/B/C/107
+   - Cleaner organization with 4 sections: Chemistry, Life Sciences, Mathematics, Physics
+
+2. **Cursor Completely Removed Sitewide**
+   - Removed custom black dot cursor from ALL pages
+   - Fixed: index.html, join.html, past-winners.html, 404.html, team.html, events.html, tutoring.html
+   - Restored default browser cursor across entire website
+   - Removed `cursor: none;` CSS and `.cursor-dot` elements everywhere
+
+3. **Tutoring Page Layout Fixed**
+   - Replaced messy vertical cards with clean horizontal layout
+   - Full-width cards for each subject
+   - Icon + subject name on left, courses listed horizontally with bullet separators
+   - Much cleaner, professional appearance
+
+4. **Dr. Lazazzera Photo Adjusted**
+   - Changed from cropped to zoomed-out view
+   - Using `object-fit: contain` with 85% scale
+   - Shows complete professional photo in circular frame
+
+### Morning Updates
+1. **Cursor Removed (Initial)**
+   - Removed custom black dot cursor from team.html, events.html, tutoring.html
    - Restored default browser cursor for better user experience
    - Removed `cursor: none;` CSS and `.cursor-dot` elements
 
