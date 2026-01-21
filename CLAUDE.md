@@ -1,5 +1,5 @@
 # Bruin Olympiad Society - Development Log
-**Last Updated:** 2026-01-15
+**Last Updated:** 2026-01-20
 
 ## Project Overview
 - **Live Site:** https://bruin-olympiad-society-7988c.web.app/
@@ -7,7 +7,36 @@
 - **Firebase Project:** bruin-olympiad-society-7988c
 - **Localhost:** http://localhost:8080
 
-## Recent Changes (2026-01-15)
+## Recent Changes (2026-01-20)
+
+### Major Updates
+1. **Cursor Removed**
+   - Removed custom black dot cursor from all pages (team.html, events.html, tutoring.html)
+   - Restored default browser cursor for better user experience
+   - Removed `cursor: none;` CSS and `.cursor-dot` elements
+
+2. **Team Photos Updated**
+   - **Dr. Deifel:** Recentered photo with `object-position: 50% 30%`
+   - **Dr. Lazazzera:** Replaced with new professional photo (`dr_lazazzera.png`)
+   - **Bernice Nkemnji:** Recentered to `50% 20%` to show medals without cutoff
+
+3. **Tutoring Page Redesign**
+   - Consolidated course layout into single row
+   - Three main categories: Chemistry, Life Sciences, Physics
+   - Chemistry: All Chem 14 series + 20/30 series in one card
+   - Life Sciences: LS 7A/B/C/107 + LS 30A/B/40 + Stats 13 in one card
+   - Physics: Physics 5A/B/C in one card
+   - Courses listed on single lines for cleaner presentation
+
+4. **Weekly Meetings Added**
+   - **Events Page (Upcoming):** Added weekly general meetings card
+     - Location: Kaplan A32
+     - Time: 7-8pm
+     - Description and icons included
+   - **Tutoring Page:** Added weekly meetings info box
+     - Displayed prominently in info section with location and time
+
+## Previous Changes (2026-01-15)
 
 ### Major Updates
 1. **Instagram Update**
@@ -65,6 +94,8 @@ images/dhruv.png             - Dhruv's team photo
 images/jay.png               - Jay's team photo
 images/dr_pham.png           - Dr. Pham advisor photo
 images/dr_ko.png             - Dr. Ko advisor photo
+images/dr_lazazzera.png      - Dr. Lazazzera advisor photo
+images/dr_deifel.png         - Dr. Deifel advisor photo
 images/bos_logo.png          - BOS logo
 ```
 

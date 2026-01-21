@@ -30,7 +30,6 @@
             color: var(--text-dark);
             font-family: 'Inter', sans-serif;
             overflow-x: hidden;
-            cursor: none;
         }
 
         .cursor-dot {
@@ -209,8 +208,6 @@
 </head>
 
 <body>
-    <div class="cursor-dot"></div>
-
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
         <div class="container">
             <a class="navbar-brand" href="index.html" style="font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 1.1rem; color: #1a1a1a; line-height: 1.2; text-decoration: none;">
@@ -257,97 +254,64 @@
 
             <div class="info-box text-center">
                 <h3 style="color: var(--ucla-blue); font-weight: 700; margin-bottom: 1rem;">Free Peer Tutoring for UCLA Students</h3>
-                <p style="font-size: 1.2rem; margin-bottom: 0;">Our experienced tutors provide personalized support to help you excel in your STEM courses. All tutoring services are completely free for UCLA students!</p>
+                <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">Our experienced tutors provide personalized support to help you excel in your STEM courses. All tutoring services are completely free for UCLA students!</p>
+                <div style="background: rgba(39, 116, 174, 0.1); padding: 1rem; border-radius: 0.5rem; margin-top: 1rem;">
+                    <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--ucla-blue);">
+                        <i class="fas fa-calendar-week" style="margin-right: 10px;"></i>Weekly General Meetings
+                    </p>
+                    <p style="margin-bottom: 0;">
+                        <i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i>Kaplan A32 |
+                        <i class="fas fa-clock" style="margin-left: 10px; margin-right: 8px;"></i>7-8pm
+                    </p>
+                </div>
             </div>
 
             <h2 class="section-title">What We Offer</h2>
 
             <h3 style="color: var(--ucla-blue); text-align: center; margin-bottom: 3rem; font-family: 'Raleway'; font-weight: 600; font-size: 1.8rem;">Lower Division Courses</h3>
 
-            <!-- First Row: Bio, Math/Stats, Chem 14 Series -->
-            <div class="row mb-4 justify-content-center" style="gap: 1.5rem;">
+            <!-- Single Row: Chemistry, Life Sciences, Physics -->
+            <div class="row mb-5 justify-content-center" style="gap: 1.5rem;">
 
-                <!-- Biology -->
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-4" style="max-width: 250px;">
+                <!-- Chemistry -->
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 mb-4" style="max-width: 300px;">
                     <div class="card-premium">
                         <div class="text-center mb-4">
-                            <i class="fas fa-dna fa-4x" style="color: var(--ucla-blue);"></i>
+                            <i class="fas fa-flask fa-4x" style="color: var(--ucla-blue);"></i>
                         </div>
-                        <h3 style="color: var(--ucla-blue); text-align: center; margin-bottom: 2rem;">Biology</h3>
+                        <h3 style="color: var(--ucla-blue); text-align: center; margin-bottom: 2rem;">Chemistry</h3>
                         <ul class="course-list">
-                            <li>LS 7A</li>
-                            <li>LS 7B</li>
-                            <li>LS 7C</li>
-                            <li>LS 107</li>
+                            <li>Chem 14A, 14B, 14C, 14D</li>
+                            <li>Chem 20A, 20B</li>
+                            <li>Chem 30A, 30B, 30C</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Math & Stats -->
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-4" style="max-width: 250px;">
+                <!-- Life Sciences -->
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 mb-4" style="max-width: 300px;">
                     <div class="card-premium">
                         <div class="text-center mb-4">
-                            <i class="fas fa-calculator fa-4x" style="color: var(--ucla-blue);"></i>
+                            <i class="fas fa-dna fa-4x" style="color: var(--ucla-blue);"></i>
                         </div>
-                        <h3 style="color: var(--ucla-blue); text-align: center; margin-bottom: 2rem;">Math & Stats</h3>
+                        <h3 style="color: var(--ucla-blue); text-align: center; margin-bottom: 2rem;">Life Sciences</h3>
                         <ul class="course-list">
-                            <li>LS 30A</li>
-                            <li>LS 30B</li>
-                            <li>LS 40</li>
+                            <li>LS 7A, 7B, 7C, 107</li>
+                            <li>LS 30A, 30B, 40</li>
                             <li>Stats 13</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Chem (14 Series) -->
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-4" style="max-width: 250px;">
-                    <div class="card-premium">
-                        <div class="text-center mb-4">
-                            <i class="fas fa-flask fa-4x" style="color: var(--ucla-blue);"></i>
-                        </div>
-                        <h3 style="color: var(--ucla-blue); text-align: center; margin-bottom: 2rem;">Chem (14 Series)</h3>
-                        <ul class="course-list">
-                            <li>Chem 14A</li>
-                            <li>Chem 14B</li>
-                            <li>Chem 14C</li>
-                            <li>Chem 14D</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Second Row: Chemistry, Physics -->
-            <div class="row mb-5 justify-content-center" style="gap: 1.5rem;">
-
-                <!-- Chemistry -->
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-4" style="max-width: 250px;">
-                    <div class="card-premium">
-                        <div class="text-center mb-4">
-                            <i class="fas fa-atom fa-4x" style="color: var(--ucla-blue);"></i>
-                        </div>
-                        <h3 style="color: var(--ucla-blue); text-align: center; margin-bottom: 2rem;">Chemistry</h3>
-                        <ul class="course-list">
-                            <li>Chem 20A</li>
-                            <li>Chem 20B</li>
-                            <li>Chem 30A</li>
-                            <li>Chem 30B</li>
-                            <li>Chem 30C</li>
-                        </ul>
-                    </div>
-                </div>
-
                 <!-- Physics -->
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-4" style="max-width: 250px;">
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 mb-4" style="max-width: 300px;">
                     <div class="card-premium">
                         <div class="text-center mb-4">
                             <i class="fas fa-lightbulb fa-4x" style="color: var(--ucla-blue);"></i>
                         </div>
                         <h3 style="color: var(--ucla-blue); text-align: center; margin-bottom: 2rem;">Physics</h3>
                         <ul class="course-list">
-                            <li>Physics 5A</li>
-                            <li>Physics 5B</li>
-                            <li>Physics 5C</li>
+                            <li>Physics 5A, 5B, 5C</li>
                         </ul>
                     </div>
                 </div>
