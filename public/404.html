@@ -19,35 +19,9 @@
         body, #message { margin-top: 0; background: white; box-shadow: none; }
         body { border-top: 16px solid #ffa100; }
       }
-    
-        /* Simple Black Dot Cursor */
-        * {
-            cursor: none;
-        }
-
-        .cursor-dot {
-            width: 10px;
-            height: 10px;
-            background: #000000;
-            border-radius: 50%;
-            position: fixed;
-            pointer-events: none;
-            z-index: 99999;
-            transform: translate(-50%, -50%);
-            transition: transform 0.15s ease;
-        }
-
-        /* Slightly larger on hover */
-        .cursor-dot.hover {
-            transform: translate(-50%, -50%) scale(1.5);
-        }
-
     </style>
   </head>
   <body>
-    <!-- Custom Cursor -->
-    <div class="cursor-dot"></div>
-    <!-- end of custom cursor -->
 
     <div id="message">
       <h2>404</h2>
